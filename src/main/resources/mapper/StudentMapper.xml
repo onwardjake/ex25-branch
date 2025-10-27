@@ -7,6 +7,7 @@
     <select id="selectAll" resultType="Student">
         SELECT * FROM student ORDER BY id DESC
     </select>
+    <!--
     <select id="selectById" parameterType="long" resultType="Student">
         SELECT * FROM student WHERE id = #{id}
     </select>
@@ -25,5 +26,5 @@
     <delete id="delete" parameterType="long">
         DELETE FROM student WHERE id=#{id}
     </delete>
-
+	-->
 </mapper>
