@@ -7,11 +7,6 @@
     <select id="selectAll" resultType="Student">
         SELECT * FROM student ORDER BY id DESC
     </select>
-<<<<<<< HEAD
-=======
-
-<!--
->>>>>>> f2/mappersql
     <select id="selectById" parameterType="long" resultType="Student">
         SELECT * FROM student WHERE id = #{id}
     </select>
@@ -30,9 +25,4 @@
     <delete id="delete" parameterType="long">
         DELETE FROM student WHERE id=#{id}
     </delete>
-<<<<<<< HEAD
-=======
--->
->>>>>>> f2/mappersql
-
 </mapper>
