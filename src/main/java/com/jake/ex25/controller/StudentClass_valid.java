@@ -32,7 +32,7 @@ public class StudentClass_valid {
 	@GetMapping("/new")
 	public String createForm(Model model) {
 		model.addAttribute("student", new Student());
-		return "student/form";
+		return "student/form_validtest";
 	}
 	
 	// 등록 form w/ validation check
@@ -51,7 +51,7 @@ public class StudentClass_valid {
 		}
 		
 		studentService.create(student);
-		return "redirect:/student/valid";
+		return "redirect:/students/valid";
 	}
 	
 	// 수정 form
